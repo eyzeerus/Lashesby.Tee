@@ -1,0 +1,300 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+		 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<Title>Lashesby.Tee</Title>
+		<style>	
+			h1, h2, h3 {font-family: 'Playfair Display', serif; }
+			body {font-family: 'Lato', sans-serif; margin: 0; padding: 0; line-height: 1.6;}
+			header {background: linear-gradient(to right, #FF66B2, #FF3385); color: #000; padding: 1.5rem 3rem; display: flex; align-items: center; justify-content: space-between;  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);}
+			header img { width: 80px;  height: 80px; border-radius: 50%; object-fit: cover;}
+			header h1 {font-family: 'Playfair Display', serif; margin-left: 2rem; font-size: 1rem; font-weight: 700;}
+			header h1 .Tee {color: #fff;}
+			header h1 .Lashes {color: #fff;}
+			h3 {font-family: 'Pacifico', font-size: 2rem; color: #FF66B2; text-align: center; letter-spacing: 1px; margin-top: 1rem; margin-bottom: 1rem; text-transform: capitalize; padding: 0.5rem; }
+			
+			nav {font-family: 'Playfair Display', serif; position: sticky; top: 0; display: flex; justify-content: space-between; align-items: center; background-color: #000; color: #fff; padding: 0.5rem 1rem; z-index: 1000;}
+			nav .nav-left{display: flex; gap: 2rem;}
+			.Tee2 {color: Hotpink;}
+			nav ul { display: flex; justify-content: flex-start; list-style: none; margin: 0; padding: 0;}
+			nav ul li {margin: 0 1rem;}
+			nav ul li a {color: #fff; text-decoration: none; font-family: 'Lato', sans-serif; font-weight: 500; font-size: 1.1rem; transition: color 0.3s, background-color 0.3s}
+			nav ul li a i{ margin-right: 10px;}
+			nav ul li a:hover {color: #000; background-color: hotpink; padding: 0.5rem 1rem; border-radius: 5px;}
+			@media screen and (max-width: 768px){header {flex-direction: column; text-align: center;}
+			nav ul {flex-direction: column; text-align: center;}
+			nav ul li {margin: 0.5rem 0;}}
+			nav a {color: #fff; text-decoration: none; margin: 0 1rem;}
+			
+			hr {border: 0; height: 3px; background: linear-gradient(to right, #FF66B2, #000); margin: 2rem 0; width: 90%; margin-left: auto; margin-right: auto;}
+			section {padding: 1rem;}
+			
+			#services {padding: 2rem; background-color: #f9f9f9;  text-align: center;}
+			#services h2 {text-align: center; font-size: 2rem; margin-bottom: 1rem;}
+			table {width: 80%;  max-width: 600px; margin: 0 auto; border-collapse: collapse; margin-top: 2rem;}
+			table th, table td { padding: 1rem; text-align: center; border: 3px solid black;}
+			table th {background-color: #FF66B2; color: white; font-family: 'Playfair Display', serif; font-weight: 700;font-size: 1.2rem;}
+			table td {background-color: #fff;}
+			table tr:nth-child(even) td {background-color: #f2f2f2;}
+			table td {font-size: 1.1rem; font-family: 'Lato', sans-serif;}
+			table tr:hover {background-color: #f9f9f9;}
+			
+			#aftercare {  padding: 2rem; background-color: #f9f9f9; text-align: center; margin-top: 2rem;}
+			#aftercare h2 {font-size: 2rem; margin-bottom: 1.5rem;}
+			.aftercare-content p {font-size: 1.1rem; font-family: 'Lato', sans-serif; color: #333; text-align: justify-content;}
+			.fas.fa-check {font-size: 1.5rem; color: #2ecc71; margin-right: 8px;}
+			.fas.fa-ban {font-size: 1.5rem; color: #e74c3c; margin-right: 8px;}
+			
+			footer {background: #333; color: #fff; text-align: center; padding: 1rem 0; margin-top: 2rem;}
+			
+			#location {padding: 3rem; background-color: #f9f9f9; text-align: center;}
+			#location h2 {font-size: 2.5rem; margin-bottom: 1.5rem; color: #333;}
+			.location-content {display: flex; justify-content: center; align-items: flex-start; gap: 3rem; flex-wrap: wrap;}
+			.location-info {max-width: 400px; font-size: 1.1rem; text-align: left;}
+			.location-info h3 {font-size: 2rem; color: #FF66B2; margin-bottom: 1rem;}
+			.location-info p {margin: 1rem 0; color: #333;}
+			.map-container {max-width: 600px;}
+			.map-container iframe {width: 100%; height: 350px; border: 0; border-radius: 8px;}
+			
+			#portfolio {padding: 3rem; background-color: #f9f9f9; text-align: center;}
+			#portfolio h2 {font-size: 2.5rem; margin-bottom: 1.5rem; color: #333;}
+			.portfolio-intro {font-size: 1.2rem; color: #555; max-width: 800px; margin: 0 auto 2rem; line-height: 1.6;}
+			.portfolio-grid {display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem;}
+			.portfolio-item {overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+			.portfolio-item img {width: 100%; height: 100%; object-fit: cover; border-radius: 8px; transition: transform 0.3s ease;}
+			.portfolio-item img:hover {transform: scale(1.05);}
+			
+			#contact {padding: 3rem; background-color: #f9f9f9; text-align: center;}
+			#contact h2 {font-size: 2.5rem; margin-bottom: 1.5rem; color: #333;}
+			.contact-intro {font-size: 1.2rem; color: #555; max-width: 800px; margin: 0 auto 2rem; line-height: 1.6;}
+			.contact-container {display: flex;  justify-content: center; align-items: flex-start; gap: 2rem; flex-wrap: wrap;}
+			.contact-form {max-width: 400px; width: 100%;}
+			.form-group {margin-bottom: 1.5rem; text-align: left;}
+			.form-group label {display: block; font-size: 1rem; color: #333; margin-bottom: 0.5rem;}
+			.form-group input,
+			.form-group textarea {width: 100%; padding: 0.8rem; font-size: 1rem; border: 2px solid #ddd; border-radius: 5px; outline: none; transition: border-color 0.3s ease;}
+			.form-group input:focus,
+			.form-group textarea:focus {border-color: #FF66B2; /* Focus color */}
+			.submit-button {background-color: #FF66B2; color: #fff; padding: 0.8rem 1.5rem; border: none;nborder-radius: 5px; cursor: pointer; font-size: 1rem; transition: background-color 0.3s ease;}
+			.submit-button:hover {background-color: #e05599;}
+			
+			.contact-info {max-width: 400px; width: 100%; text-align: left;}
+			.contact-info h3 {font-size: 1.5rem; color: #FF66B2; margin-bottom: 1rem;}
+			.contact-info p {font-size: 1rem; color: #333; margin-bottom: 0.8rem;}
+			
+			#contact-footer {background-color: #000; color: #fff; padding: 2rem 1rem; text-align: center;}
+			#contact-footer h3 {font-family: 'Pacifico', cursive; font-size: 2rem; color: #FF66B2; margin-bottom: 1rem;}
+			.contact-intro {font-size: 1.2rem; color: #555; max-width: 800px; margin: 0 auto 2rem; line-height: 1.6;}
+			.contact-info {display: flex;  flex-direction: column; align-items: center; gap: 1.5rem; margin-top: 1.5rem;}
+			.contact-item {display: flex; align-items: center; font-size: 1.2rem; color: #333; gap: 0.5rem;}
+			.contact-item i {font-size: 1.5rem; color: #FF66B2;}
+			.contact-item a {color: #fff; text-decoration: none; transition: color 0.3s ease;}
+			.contact-item a:hover {color: #FF66B2;}
+			.footer-intro {font-size: 1rem; color: #ddd; max-width: 600px; margin: 0 auto 1.5rem; line-height: 1.6;}
+			.footer-info {display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;}
+			.footer-item {display: flex; align-items: center; gap: 0.5rem; font-size: 1rem;}
+			.footer-item i {font-size: 1.5rem; color: #FF66B2;}
+			.footer-item a {color: #fff; text-decoration: none; transition: color 0.3s ease;}
+			.footer-item a:hover {color: #FF66B2;}
+			.footer-bottom {margin-top: 1.5rem; font-size: 0.9rem; color: #aaa;}
+			.footer-bottom p {margin: 0;}
+		</style>
+	</head>
+	<body>
+
+<!-- header -->
+		<header>
+			<img src="logo.png" alt="Site Logo">
+			<h1><span class="Lashes">Lashes</span>by.<span class="Tee">Tee</span></h1>
+		</header>
+		   
+<!-- Nav bar -->
+		<nav>
+			<div class="new-left">
+				<ul>
+					<li><a href="#services"><i class="fas fa-cogs"></i>Services</a></li>
+					<li><a href="#aftercare"><i class="fas fa-hand-holding-heart"></i>Aftercare</a></li>
+					<li><a href="#location"><i class="fas fa-map-marker-alt"></i>Location</a></li>
+					<li><a href="#portfolio"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+					<li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+				</ul>
+			</div>
+			<div class="nav-right">
+				<a href="#top">LashesBy<span class="Tee2">.Tee</span></a>
+			</div>
+		</nav>
+		
+<!-- Services -->		
+	<section id="services">
+    <h2>Services</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Style</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Classic Lash Set.</td>
+                <td>R 120</td>
+            </tr>
+            <tr>
+                <td>Cat eye Lash Set.</td>
+                <td>R 150</td>
+            </tr>
+            <tr>
+                <td>Hybrid Lash Set.</td>
+                <td>R 150</td>
+            </tr>
+            <tr>
+                <td>Volume Cat Eye/Hybrid.</td>
+                <td>R 200</td>
+            </tr>
+		</tbody>
+	</table>
+	<table><br><br>
+		<h2> Additional Services</h2>
+		<thead>
+            <tr>
+                <th>Service</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+            <tr>
+                <td>Lash Removal</td>
+                <td>R50</td>
+			</tr>
+			<tr>
+				<td>Classic Refill</td>
+                <td>R50</td>
+			</tr>
+			<tr>
+				<td>Volume Refill</td>
+                <td>R100</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<hr>
+<!-- aftercare -->
+<section id="aftercare">
+    <h2>Aftercare</h2>
+    <div class="aftercare-content">
+        <i class="fas fa-hand-holding-heart"></i>
+        <p>After your lash treatment, it's essential to follow proper aftercare instructions to ensure the longevity and health of your lashes.</p>
+		<br>
+		<h3>Lash Aftercare</h3>
+		<br><br>
+			<i class="fas fa-ban"></i><br>
+			Avoid Rubbing your eyes<br>
+			Avoid heat/steam<br>
+			Do NOT use Mascara<br>
+			Do NOT pick/pull your lashes<br>
+			Do NOT use Lash curlers<br><br>
+			<i class="fas fa-check"></i><br>
+			Sleep on your back<br>
+			Use oil FREE products
+    </div>
+</section>
+<hr>
+
+<!-- Location -->
+<section id="location">
+    <h2>Location</h2>
+    <div class="location-content">
+        <div class="location-info">
+            <h3>Pin</h3>
+            <p><strong>Address:</strong> <br>123 Lash Street, Beauty City, <br>BC 12345</p>
+            
+        </div>
+        <div class="map-container">
+            <h3>Find Us on the Map</h3>
+            <!-- Embed Google Map -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.065541261296!2d-73.98195668459332!3d40.748817179327484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259ae5fd7e495%3A0x6d0db57d95a1b6fa!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1674525607138!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section><br>
+<hr>
+<!-- Portfolio -->
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <p class="portfolio-intro">Explore some of the stunning lash extensions and transformations. Each set is tailored to meet the unique style and needs of the clients. Take a look at my work below!</p>
+
+    <div class="portfolio-grid">
+        <!-- Row 1 -->
+        <div class="portfolio-item"><img src="port.png" alt="Lash Style 1"></div>
+        <div class="portfolio-item"><img src="port.png" alt="Lash Style 2"></div>
+        <div class="portfolio-item"><img src="port.png" alt="Lash Style 3"></div>
+        
+        <!-- Row 2 -->
+        <div class="portfolio-item"><img src="port.png" alt="Lash Style 4"></div>
+        <div class="portfolio-item"><img src="port.png" alt="Lash Style 5"></div>
+        <div class="portfolio-item"><img src="port.png" alt="Lash Style 6"></div>
+        
+        <!-- Row 3 -->
+        <div class="portfolio-item"><img src="port.png" alt="Lash Style 7"></div>
+        <div class="portfolio-item"><img src="port.png" alt="Lash Style 8"></div>
+        <div class="portfolio-item"><img src="port.png" alt="Lash Style 9"></div>
+        <!-- Row 4 -->
+        <div class="portfolio-item"><img src="port.png" alt="Lash Style 10"></div>
+        <div class="portfolio-item"><img src="port.png" alt="Lash Style 11"></div>
+        <div class="portfolio-item"><img src="port.png" alt="Lash Style 12"></div>
+    </div>
+</section>
+<hr>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact Me</h2>
+     <p class="contact-intro">Want to get in touch? Share your phone number and message, and a response will be given as soon as possible!</p>
+
+    <div class="contact-container">
+        <!-- Contact Form -->
+        <form action="https://formspree.io/f/mnnjdakz" method="POST">
+			<div class="form-group">
+				<label for="name">Your Name</label>
+				<input type="text" id="name" name="name" placeholder="Enter your name" required>
+			</div>
+			<div class="form-group">
+				<label for="phone">Your Phone Number</label>
+				<input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+			</div>
+			<div class="form-group">
+				<label for="message">Your Message</label>
+				<textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+			</div>
+				<button type="submit" class="submit-button">Send Message</button>
+		</form>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+			<p class="contact-intro">Submitting a form:</p>
+			<p>In Your message please indicate which service you would like and whether you want to do a house call or not.</p>
+        </div>
+    </div>
+</section>
+<footer id="contact-footer">
+    <div class="footer-content">
+        <h3>Contact Us</h3>
+        <p class="footer-intro">Reach out via phone or follow us on Instagram for updates, appointments, and more!</p>
+
+        <div class="footer-info">
+            <div class="footer-item">
+				<i class="fas fa-phone-alt"></i>
+				<p><a href="tel:+27676973385">067 697 3385</a></p>
+			</div>
+			<div class="contact-item">
+            <i class="fab fa-instagram"></i>
+            <p><a href="https://www.instagram.com/lashesby.tee_/" target="_blank">@Lashesby.Tee_</a></p>
+			</div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 LashesByTee. All rights reserved.</p>
+    </div>
+</footer>
+              
