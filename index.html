@@ -1,7 +1,10 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Default viewport for desktop -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.75, maximum-scale=5.0, user-scalable=yes">
+		<!-- Mobile-specific viewport zoom settings -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.2, maximum-scale=1.2, user-scalable=no" media="(max-width: 768px)">
 		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
 		 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 		<Title>Lashesby.Tee</Title>
@@ -36,6 +39,9 @@
 			
 			hr {border: 0; height: 3px; background: linear-gradient(to right, #FF66B2, #000); margin: 2rem 0; width: 90%; margin-left: auto; margin-right: auto;}
 			section {padding: 1rem;}
+			
+			#welcome {display: flex; justify-content: center; align-items: center; text-align: center; padding: 2rem; height: 50vh;}
+			.welcome-content {max-width: 800px; padding: 1rem;}
 			
 			#policy {padding: 2rem; background-color: #f9f9f9; text-align: justify-content;}
 			#policy h2 {text-align: center; font-size: 2rem; margin-bottom: 1rem;}
@@ -79,6 +85,7 @@
 			.portfolio-grid {grid-template-columns: 1fr;}
 			.portfolio-item img {width: 100%; height: auto;}
 			.portfolio-item:nth-child(n+7) {display: none;}}
+			
 			
 			#contact {padding: 3rem; background-color: #f9f9f9; text-align: center;}
 			#contact h2 {font-size: 2.5rem; margin-bottom: 1.5rem; color: #333;}
@@ -140,8 +147,26 @@
 			</div>
 			</span>
 		</nav>
+		
+<!-- Welcome -->
+<section id="welcome">
+    <div class="welcome-content">
+        <h2>Welcome to Lashesby<span class="Tee2">.Tee</span><i class="fas fa-heart" style="color: pink; font-size: 24px;"></i></h2>
+        <p class="welcome">Your go-to destination for stunning, custom lash extensions. At <strong>Lashesby.Tee</strong>, we’re dedicated to making every client feel beautiful and confident, with lash styles that suit your individual personality and preferences.</p>
+        <p>Whether you're looking for a classic look or something bold and dramatic, we provide a variety of lash sets to meet your needs. Explore our services, aftercare advice, and portfolio to discover your perfect lash look.</p>
+        <p>We’re so excited to be part of your beauty journey. Enjoy your experience with us!</p>
+    </div>
+</section>
+    <div class="welcome-image">
+        <img src="welcome.png" alt="Beautiful Lash Extensions" style="width:100%; max-height:400px; object-fit: cover; border-radius: 8px;">
+    </div>
+
+		
+<!-- Policy -->
 <section id="Policy">
     <h2>Policy</h2>
+	<p class="portfolio-intro">We prioritize providing exceptional service and maintaining a safe, welcoming environment for all our clients. Our policies are designed to ensure the highest standards of care, professionalism, and respect. This includes a commitment to punctuality and adherence to health and safety regulations. We also encourage open communication regarding any concerns or special requests, ensuring that each client receives personalized and high-quality care. By following these policies, we can continue to offer a premium experience that meets the needs of every individual.</p><br>
+	<p>The policy is as follows:</p>
 	    <ul> 
 		<li>Any appointments from August must be made a week in advance to appointment.</li>
 		<li>Extra charges will be made for housecalls.</li>
@@ -151,6 +176,7 @@
 	<div class="aftercare-content">
 		<br>
 		<h3>Cleint Etiquette</h3>
+		<br>
 			<ul>
 				<li>Please arrive on time. 30 mins late will be rescheduled to another time slot.</li>
 				<li>Clarify Method of payment before appointment.</li>
@@ -161,11 +187,12 @@
 				<li>Remove mascara/makeup.</li>
 				<li>Inform your lash artist, if you have any allergies/medical conditions.</li>
 			</ul>
+			<br>
 		<p>Most importantly, ENJOY the ride <i class="fas fa-heart" style="color: pink; font-size: 24px;"></i></p>
 		<p>p.s lashesby.tee_</p>
     </div>
 	<hr>
-</section>	
+</section>		
 <!-- Services -->		
 	<section id="services">
     <h2>Services</h2>
@@ -197,27 +224,27 @@
 	</table>
 	<table><br><br>
 		<h2> Additional Services</h2>
-		<thead>
-            <tr>
-                <th>Service</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-            <tr>
-                <td>Lash Removal</td>
-                <td>R50</td>
-			</tr>
-			<tr>
-				<td>Classic Refill</td>
-                <td>R50</td>
-			</tr>
-			<tr>
-				<td>Volume Refill</td>
-                <td>R100</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
+			<thead>
+				<tr>
+					<th>Service</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+				<tr>
+					<td>Lash Removal</td>
+					<td>R50</td>
+				</tr>
+				<tr>
+					<td>Classic Refill</td>
+					<td>R50</td>
+				</tr>
+				<tr>
+					<td>Volume Refill</td>
+					<td>R100</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
 <hr>
 <!-- aftercare -->
 <section id="aftercare">
@@ -337,4 +364,5 @@
         <p>&copy; 2025 LashesByTee. All rights reserved.</p>
     </div>
 </footer>
-              
+</body>
+</html>                     
